@@ -49,12 +49,23 @@
       bottom: 0;
       left: 0;
       right: 0;
-      height: 80px;
+      height: 50px;
       background-color: rgba(2, 11, 12, 0.566); 
       border-radius: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(1, 6, 7, 0.566);
     }
 </style>
 </head>
@@ -62,7 +73,7 @@
     <div class="overlay">
         <h1>『硫酸铝的下载站』-----链接总览</h1>
         <div class="button-container">
-            <button><a href="https://wwt.lanzouj.com/b00l0qk7cd">『硫酸铝的下载站』相关文档(每人必读)-密码:hlp7</a></button>
+            <button><a href="https://wwt.lanzouj.com/b00l0qk7cd">『硫酸铝的下载站』相关文档-密码:hlp7</a></button>
             <button><a href="https://wwt.lanzouj.com/b04x0m76d">PlantsVsZombies(Windows)-密码:71va</a></button>
             <button><a href="https://wwt.lanzouj.com/b04x0n7wf">MinecraftBedrockAddons-密码:17tr</a></button>
             <button><a href="https://wwt.lanzouj.com/b04x11cob">Undertale(Windows)-密码:gdh9</a></button>
@@ -71,8 +82,7 @@
         </div>
     </div>
     <div class="bottomBar">
-        <span style="color:#ffffff">请在阅读『硫酸铝的下载站』相关文档之后浏览本站内容,否则发生任何问题后果全部由您承担!</span>
-        <span style="color:#ffffff">丨Al2(SO4)3-硫酸铝----------<a href="https://al2so43.github.io/website/" style="color:#ffffff">回到『硫酸铝的个人网站』</a></span>
+        <span style="color:#ffffff">Al2(SO4)3-硫酸铝丨<a href="https://al2so43.github.io/website/" style="color:#ffffff">回到『硫酸铝的个人网站』</a></span>
     <script>
     // 定义背景图片数组
     var backgroundImages = [
@@ -83,5 +93,16 @@
     var selectedImage = backgroundImages[randomIndex];
     // 设置背景图片
     document.body.style.backgroundImage = 'url(' + selectedImage + ')';
+    // 显示弹窗
+    window.onload = function() {
+      var modal = document.createElement('div');
+      modal.classList.add('modal');
+      modal.innerHTML = '<p>请在阅读『硫酸铝的下载站』相关文档之后浏览本站内容,否则发生任何问题后果全部由您承担!</p>';
+      document.body.appendChild(modal);
+      modal.style.display = 'block';
+      setTimeout(function() {
+        modal.style.display = 'none';
+      }, 5000); // 5秒后自动隐藏
+    };
 </script>
 </head>
