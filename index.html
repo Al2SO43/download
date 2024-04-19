@@ -5,69 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>『硫酸铝的下载站』</title>
   <link rel="icon" type="image/png" href="favicon.ico">
-  <style>
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: cover;
-        background-position: center;
-    }
-    .overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(255, 255, 255, 0.5); /* 透明背景色 */
-            padding: 20px;
-            backdrop-filter: blur(5px); /* 毛玻璃效果 */
-            border-radius: 10px;
-            text-align: center;
-        }
-    .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;  /* 在水平方向上居中对齐 */
-            gap: 10px;
-            padding: 20px;
-            max-width: 180vw; /* 限制最大宽度 */
-            overflow-y: auto; /* 显示垂直滚动条 */
-            max-height: 50vh; /* 限制最大高度 */
-        }
-    .button-container button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-bottom: 10px;
-            /* 其他样式保持不变 */
-        }
-    .bottomBar {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 50px;
-      background-color: rgba(2, 11, 12, 0.566); 
-      border-radius: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .modal {
-      display: none;
-      position: fixed;
-      top: 15%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgba(255, 255, 255, 0.5);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(1, 6, 7, 0.566);
-    }
-</style>
+  <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
     <div class="overlay">
@@ -83,26 +21,5 @@
     </div>
     <div class="bottomBar">
         <span style="color:#ffffff">Al2(SO4)3-硫酸铝丨<a href="https://al2so43.github.io/website/" style="color:#ffffff">回到『硫酸铝的个人网站』</a></span>
-    <script>
-    // 定义背景图片数组
-    var backgroundImages = [
-        './img/background1.jpg','./img/background2.jpg','./img/background3.jpg','./img/background4.jpg','./img/background5.jpg','./img/background6.jpg','./img/background7.jpg','./img/background8.jpg','./img/background9.jpg','./img/background10.jpg'
-    ];
-    // 随机选择背景图片
-    var randomIndex = Math.floor(Math.random() * backgroundImages.length);
-    var selectedImage = backgroundImages[randomIndex];
-    // 设置背景图片
-    document.body.style.backgroundImage = 'url(' + selectedImage + ')';
-    // 显示弹窗
-    window.onload = function() {
-      var modal = document.createElement('div');
-      modal.classList.add('modal');
-      modal.innerHTML = '<p>请在阅读『硫酸铝的下载站』相关文档之后浏览本站内容,否则因各种原因发生的任何问题的后果将全部由您承担!</p>';
-      document.body.appendChild(modal);
-      modal.style.display = 'block';
-      setTimeout(function() {
-        modal.style.display = 'none';
-      }, 7500); // 7.5秒后自动隐藏
-    };
-</script>
+    <script src="js.js"></script>
 </head>

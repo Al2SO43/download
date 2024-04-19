@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+.overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.5); /* 透明背景色 */
+        padding: 20px;
+        backdrop-filter: blur(5px); /* 毛玻璃效果 */
+        border-radius: 10px;
+        text-align: center;
+    }
+.button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  /* 在水平方向上居中对齐 */
+        gap: 10px;
+        padding: 20px;
+        max-width: 180vw; /* 限制最大宽度 */
+        overflow-y: auto; /* 显示垂直滚动条 */
+        max-height: 50vh; /* 限制最大高度 */
+    }
+.button-container button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        /* 其他样式保持不变 */
+    }
+.bottomBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: rgba(2, 11, 12, 0.566); 
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(1, 6, 7, 0.566);
+}
