@@ -27,7 +27,7 @@ body {
         padding: 20px;
         max-width: 180vw; /* 限制最大宽度 */
         overflow-y: auto; /* 显示垂直滚动条 */
-        max-height: 50vh; /* 限制最大高度 */
+        max-height: 40vh; /* 限制最大高度 */
     }
 .button-container button {
         padding: 10px 20px;
