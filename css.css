@@ -37,7 +37,7 @@ body {
         /* 其他样式保持不变 */
     }
 .bottomBar {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
