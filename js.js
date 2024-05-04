@@ -11,7 +11,7 @@ document.body.style.backgroundImage = 'url(' + selectedImage + ')';
 window.onload = function() {
   var modal = document.createElement('div');
   modal.classList.add('modal');
-  modal.innerHTML = '<p>请在阅读 <a href="PDF.pdf">『硫酸铝的下载站---相关说明文档』</a> 之后浏览本站内容,否则因各种原因发生的任何问题的后果将全部由您承担!</p>';
+  modal.innerHTML = '<p>请在阅读 <a href="PDF.pdf">『硫酸铝的下载站---相关说明』</a> 之后浏览本站内容,否则因各种原因发生的任何问题的后果将全部由您承担!</p>';
   document.body.appendChild(modal);
   modal.style.display = 'block';
   setTimeout(function() {
