@@ -1,6 +1,6 @@
 // 定义背景图片数组
 var backgroundImages = [
-    './img/background1.jpg','./img/background2.jpg','./img/background3.jpg','./img/background4.jpg','./img/background5.jpg','./img/background6.jpg','./img/background7.jpg','./img/background8.jpg','./img/background9.jpg','./img/background10.jpg'
+    './img/background1.jpeg','./img/background2.jpeg','./img/background3.jpeg','./img/background4.jpeg','./img/background5.jpeg','./img/background6.jpeg','./img/background7.jpeg','./img/background8.jpeg','./img/background9.jpeg','./img/background10.jpeg'
 ];
 // 随机选择背景图片
 var randomIndex = Math.floor(Math.random() * backgroundImages.length);
