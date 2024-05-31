@@ -31,7 +31,7 @@ body {
     }
 .button-container button {
         padding: 10px 20px;
-        font-size: 1rem;
+        font-size: 16px;
         cursor: pointer;
         margin-bottom: 10px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -66,5 +66,5 @@ body {
 #datetime {
   text-align: center;  
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
