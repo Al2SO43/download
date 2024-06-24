@@ -1,3 +1,4 @@
+@charset "utf-8";
 body {
     margin: 0;
     padding: 0;
@@ -31,12 +32,12 @@ body {
     }
 .button-container button {
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 1rem;
         cursor: pointer;
         margin-bottom: 10px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.1);
         color: rgb(0, 0, 0);
         border: 1px solid rgb(0, 0, 0);
     }
@@ -52,19 +53,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-.modal {
-  display: none;
-  position: fixed;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(1, 6, 7, 0.566);
-}
 #datetime {
   text-align: center;  
   padding: 10px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
