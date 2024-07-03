@@ -23,6 +23,7 @@ body {
     text-align: center;
     width: 80%; 
     height: 65%;
+    overflow-x: hidden;
 }
 
 .button-container {
@@ -34,7 +35,6 @@ body {
     max-width: 95%; 
     overflow-y: auto; 
     max-height: 60%; 
-    overflow-x: hidden;
 }
 
 .button-container button {
