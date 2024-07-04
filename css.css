@@ -21,40 +21,57 @@ body {
     backdrop-filter: blur(5px); 
     border-radius: 20px;
     text-align: center;
+    overflow-x: hidden;
 }
-
-.button-container {
+.folder-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     padding: 20px;
     max-width: 180vw; 
     overflow-y: auto; 
-    max-height: 40vh; 
+    max-height: 40vh;
+    overflow-x: hidden;
 }
 
-.button-container button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-bottom: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+.folder {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    width: 100%;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.1);
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, transform 0.3s;
 }
 
-.button-container button:hover {
+.folder a {
+    text-decoration: none; 
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.folder:hover {
     background-color: rgba(255, 255, 255, 0.3);
     transform: scale(1.05);
 }
 
-.button-container a {
-    text-decoration: none;
-    color: inherit;
+.folder img {
+    width: 32px;
+    height: 32px;
+}
+
+.folder span {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    word-wrap: break-word;
+    width: 100%;
 }
 
 .bottomBar {
