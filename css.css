@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #00008B, #ADD8E6); 
+    animation: animateBackground 120s infinite; 
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    backdrop-filter: blur(5px); 
+    border-radius: 20px;
+    text-align: center;
+    overflow-x: hidden;
+}
+.folder-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 180vw; 
+    overflow-y: auto; 
+    max-height: 40vh;
+    overflow-x: hidden;
+}
+
+.folder {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.folder a {
+    text-decoration: none; 
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.folder:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.folder img {
+    width: 32px;
+    height: 32px;
+}
+
+.folder span {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.bottomBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: rgba(2, 11, 12, 0.566); 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#datetime {
+    text-align: center;  
+    padding: 10px;
+    font-size: 1.35rem;
+}
+
+@keyframes animateBackground {
+    0% {
+        background: linear-gradient(to bottom, #ADD8E6, #87CEEB);
+    }
+    100% {
+        background: linear-gradient(to bottom, #35348E, #0000FF);
+    }
+}
+
+@keyframes animateBackground {
+    0% {
+        background: linear-gradient(to bottom, #ADD8E6, #87CEEB);
+    }
+    2.5% {
+        background: linear-gradient(to bottom, #AAD7E5, #85CDEA);
+    }
+    5% {
+        background: linear-gradient(to bottom, #A7C5E4, #81CBEC);
+    }
+    7.5% {
+        background: linear-gradient(to bottom, #A4B3E3, #7DB9EE);
+    }
+    10% {
+        background: linear-gradient(to bottom, #A1A1E2, #79A7F0);
+    }
+    12.5% {
+        background: linear-gradient(to bottom, #9E8FE1, #7595F2);
+    }
+    15% {
+        background: linear-gradient(to bottom, #9B7DE0, #7183F4);
+    }
+    17.5% {
+        background: linear-gradient(to bottom, #986BDF, #6D71F6);
+    }
+    20% {
+        background: linear-gradient(to bottom, #9559DE, #695FF8);
+    }
+    22.5% {
+        background: linear-gradient(to bottom, #9247DD, #654DFA);
+    }
+    25% {
+        background: linear-gradient(to bottom, #8F35DC, #613BFC);
+    }
+    27.5% {
+        background: linear-gradient(to bottom, #8C23DB, #5D29FE);
+    }
+    30% {
+        background: linear-gradient(to bottom, #8911DA, #5917FF);
+    }
+    32.5% {
+        background: linear-gradient(to bottom, #86FEC9, #5505FF);
+    }
+    35% {
+        background: linear-gradient(to bottom, #83EDB8, #5103FF);
+    }
+    37.5% {
+        background: linear-gradient(to bottom, #80DCB7, #4D01FF);
+    }
+    40% {
+        background: linear-gradient(to bottom, #7DCBA6, #4900FF);
+    }
+    42.5% {
+        background: linear-gradient(to bottom, #7ABAA5, #4500FF);
+    }
+    45% {
+        background: linear-gradient(to bottom, #77A9A4, #4100FF);
+    }
+    47.5% {
+        background: linear-gradient(to bottom, #7498A3, #3D00FF);
+    }
+    50% {
+        background: linear-gradient(to bottom, #7187A2, #3900FF);
+    }
+    52.5% {
+        background: linear-gradient(to bottom, #6E76A1, #3500FF);
+    }
+    55% {
+        background: linear-gradient(to bottom, #6B65A0, #3100FF);
+    }
+    57.5% {
+        background: linear-gradient(to bottom, #68549F, #2D00FF);
+    }
+    60% {
+        background: linear-gradient(to bottom, #65439E, #2900FF);
+    }
+    62.5% {
+        background: linear-gradient(to bottom, #62329D, #2500FF);
+    }
+    65% {
+        background: linear-gradient(to bottom, #5F219C, #2100FF);
+    }
+    67.5% {
+        background: linear-gradient(to bottom, #5C109B, #1D00FF);
+    }
+    70% {
+        background: linear-gradient(to bottom, #59FF9A, #1900FF);
+    }
+    72.5% {
+        background: linear-gradient(to bottom, #56EE99, #1500FF);
+    }
+    75% {
+        background: linear-gradient(to bottom, #53DD98, #1100FF);
+    }
+    77.5% {
+        background: linear-gradient(to bottom, #50CC97, #0D00FF);
+    }
+    80% {
+        background: linear-gradient(to bottom, #4DBB96, #0900FF);
+    }
+    82.5% {
+      background: linear-gradient(to bottom, #4AAB95, #0500FF);
+  }
+  85% {
+      background: linear-gradient(to bottom, #479A94, #0100FF);
+  }
+  87.5% {
+      background: linear-gradient(to bottom, #448993, #0000FF);
+  }
+  90% {
+      background: linear-gradient(to bottom, #417892, #0000FF);
+  }
+  92.5% {
+      background: linear-gradient(to bottom, #3E6791, #0000FF);
+  }
+  95% {
+      background: linear-gradient(to bottom, #3B5690, #0000FF);
+  }
+  97.5% {
+      background: linear-gradient(to bottom, #38458F, #0000FF);
+  }
+  100% {
+      background: linear-gradient(to bottom, #35348E, #0000FF);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #278cc6a6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1f74ac;
+}
