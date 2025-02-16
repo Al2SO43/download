@@ -30,6 +30,7 @@ body {
     gap: 20px;
     padding: 20px;
     max-width: 180vw; 
+    min-width: 13.5rem;
     overflow-y: auto; 
     max-height: 40vh;
     overflow-x: hidden;
